@@ -38,7 +38,7 @@ public class Pruebas {
 		//var movida;
 		//var movida = null;
 		//movida = "QUE NO";
-				
+		
 		//Tampoco podemos declarar varias en la misma línea
 		int n1, n2, n3; 
 		//var n1, n2, n3;	

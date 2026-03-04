@@ -27,16 +27,16 @@ public class Pruebas {
 		//
 		
 		//Proporcionando la url
-		HttpRequest request1 = HttpRequest
-			.newBuilder(new URI("http://localhost:8080/discos"))
-			.build();
-		 
-		//Otra manera
 		//La clase tiene 'fluent api'
 		HttpRequest request2 =HttpRequest
-			.newBuilder()
-			.uri(new URI("http://localhost:8080/discos"))
-			.build();
+				.newBuilder()
+				.uri(new URI("http://localhost:8080/discos"))
+				.build();
+		 
+		//Otra manera
+		HttpRequest request1 = HttpRequest
+				.newBuilder(new URI("http://localhost:8080/discos"))
+				.build();
 		
 		//Especificando el método HTTP (por defecto GET)
 		HttpRequest request3 = HttpRequest
@@ -57,11 +57,11 @@ public class Pruebas {
 		//Headers
 		HttpRequest request5 = HttpRequest
 			.newBuilder()
+			.GET()
 			.uri(new URI("http://localhost:8080/discos"))
 			.version(HttpClient.Version.HTTP_2)
 			.header("accept", "application/json")
 			.headers("header1","valor1","header2","valor2","Header3","y así...")
-			.GET()
 			.build();
 		
 		//Timeout

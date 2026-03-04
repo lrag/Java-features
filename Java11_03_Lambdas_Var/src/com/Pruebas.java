@@ -10,7 +10,8 @@ public class Pruebas {
 		System.out.println("============================");
 		
 		//Disponemos de expresiones lambda desde Java 8		
-		BiConsumer<String, String> ejemplo1 = (s1, s2) -> System.out.println(s1+"-"+s2);
+		BiConsumer<String, String> ejemplo1 = (String s1, String s2) -> System.out.println(s1+"-"+s2);
+		BiConsumer<String, String> ejemplo2 = (s1, s2) -> System.out.println(s1+"-"+s2);
 		ejemplo1.accept("Hola","Raffaella");
 		
 		//Disponemos de variables definidas con 'var' desde Java 10		
@@ -18,8 +19,8 @@ public class Pruebas {
 		var txt2 = "Dos";
 		
 		//Ahora en Java 11 se puede utilizar var en los parámetros de las expresiones lambda
-		BiConsumer<String, String> ejemplo2 = (var s1, var s2) -> System.out.println(s1+":"+s2);
-		ejemplo2.accept("Hola","Radiola");
+		BiConsumer<String, String> ejemplo3 = (var s1, var s2) -> System.out.println(s1+":"+s2);
+		ejemplo3.accept("Hola","Radiola");
 		
 		//La utilidad de esto es...ninguna, pero al menos es consecuente con la adición de var en Java 10
 		

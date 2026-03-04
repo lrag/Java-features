@@ -19,7 +19,7 @@ public class ClaseConFinalize {
 		
 		Object obj;
 		
-		System.out.println("Adios mundo cruel");
+		System.out.println("Adios mundo cruel. ("+Thread.currentThread().getName()+")");
 		try {
 			//fw.close();
 			//sk.close();

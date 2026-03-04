@@ -73,7 +73,7 @@ public class Pruebas {
 		System.out.println("Trimestre:"+trimestre);
 		
 		//Si el bloque 'case' tiene más de una línea se utiliza 'yield' a modo de 'return'
-		//Nueva palabra reservada:
+		//Nueva "palabra reservada":
 		//-No se puede utilizar como nombre de clase
 		//-Pero si como nombre de variable
 		trimestre = switch(mes) {

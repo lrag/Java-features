@@ -16,9 +16,6 @@ public class Pruebas {
 		System.out.println(txt1);
 		System.out.println(txt2);
 		
-		
-		
-		
 		//10 caracteres de sangrado
 		txt1 = txt1.indent(10);
 		txt2 = txt2.indent(10);
@@ -53,9 +50,14 @@ public class Pruebas {
 		String txt4 = txt3.toUpperCase();
 		String txt5 = txt3.transform(txt -> txt.toUpperCase());
 		String txt6 = txt3.transform(String::toUpperCase);
+		
+		Function<String, String> movida = txt -> txt.toUpperCase();
+		String txt7 = txt3.transform(movida);
+		
 		System.out.println(txt4);
 		System.out.println(txt5);
 		System.out.println(txt6);		
+		System.out.println(txt7);		
 		
 		txt6.transform(new TransformadorMinusculas());		
 		

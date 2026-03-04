@@ -5,11 +5,11 @@ package com;
 //
 
 //Heredan de java.lang.Record
-//Pueden declararse dentro de una clase. Serán implícitamente estáticos
+//Pueden declararse internamente en una clase. Serán implícitamente estáticos
 //Pueden utilizar generics
 //Pueden implementar interfaces
 //Son inmutables
-//Métodos accesores llamados como los atributos (sin 'get')
+//Métodos accesores llamados como los campos (sin 'get')
 
 //Se instancian con new
 //Pueden tener 

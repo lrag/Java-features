@@ -9,6 +9,12 @@ public class Pruebas {
 		//En Java 15 ya forman parte oficialmente del lenguaje
 		//
 		
+		String texto = "siete"+
+				"caballos"+
+				"vienen"+
+				"de"+
+				"Bonanza";
+		
 		//Tras las primeras tres comillas dobles no puede colocarse nada, ni siquiera un comentario
 		//La cadena de texto comienza en la línea 15
 		String texto1 = """                   
@@ -50,7 +56,7 @@ public class Pruebas {
 		System.out.println(texto2); //Aparece exactamente igual
 		System.out.println(texto3);
 		System.out.println(texto4);
-
+		
 		//Escapando (barbarismo) las tres comillas
 		System.out.println("===================================");
 		String texto5 = """
@@ -76,7 +82,7 @@ public class Pruebas {
 			Tres     \s""";	//Ahora si
 		System.out.println(texto6+":");
 		System.out.println(texto7+":");
-
+		
 		//Añadiendo variables
 		System.out.println("===================================");
 		String nombre = "Harry Callahan";

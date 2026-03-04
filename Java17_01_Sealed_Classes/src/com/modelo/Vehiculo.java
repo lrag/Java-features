@@ -6,11 +6,11 @@ import com.modelo.otroPaquete.Furgoneta;
 
 
 //
-//Definimos qué clases podrán heredar de Vehiculo.
+//Definimos qué clases podrán heredar de Vehículo.
 //sealed y permits no son palabras reservadas sino identificadores reservados
 //
 //
-//Con las clases selladas podemos tener una clase con acceso público que de la que pueden heredar
+//Con las clases selladas podemos tener una clase con acceso público de la que pueden heredar
 //otras situadas en distintos paquetes, manteniendo el control de cuáles son estas
 //
 //Las clases que hereden de una clase sellada han de ser finales o selladas a su vez
@@ -18,6 +18,8 @@ import com.modelo.otroPaquete.Furgoneta;
 //Las clases 'permitted' deben estár en el mismo módulo
 //
 //Tambien en interfaces!
+//
+//No es obligatorio que una clase sellada sea abstracta
 //
 public abstract sealed class Vehiculo permits Coche, Camion, Furgoneta {	
 	public abstract void arrancar();	

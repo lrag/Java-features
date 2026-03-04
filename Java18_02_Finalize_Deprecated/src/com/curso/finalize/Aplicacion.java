@@ -6,7 +6,7 @@ public class Aplicacion {
 		
 		System.out.println("=======================================");
 		System.out.println("Iniciando test 'finalize'...");
-		Thread.sleep(10_000);	
+		//Thread.sleep(10_000);	
 		System.out.println("Creando objetos...");			
 		
 		//Hasta que el cuerpo aguante

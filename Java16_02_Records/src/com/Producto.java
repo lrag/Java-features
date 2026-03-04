@@ -1,5 +1,7 @@
 package com;
 
+import java.util.Objects;
+
 //Record con sobreescritura y métodos
 public record Producto(Integer id, String nombre, String fabricante) {
 	
@@ -8,12 +10,29 @@ public record Producto(Integer id, String nombre, String fabricante) {
 		return id+","+nombre+","+fabricante;
 	}
 	
+	//Sobreescribiendo métodos accesores
 	@Override
-	public boolean equals(Object otroObjeto) {
-		if(!(otroObjeto instanceof Producto otroProducto)) {
+	public String nombre() {
+		System.out.println("nombre() sobreescrito");
+		return this.nombre;
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(fabricante, id, nombre);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
 			return false;
-		}
-		return id.equals(otroProducto.id);
+		if (getClass() != obj.getClass())
+			return false;
+		Producto other = (Producto) obj;
+		return Objects.equals(fabricante, other.fabricante) && Objects.equals(id, other.id)
+				&& Objects.equals(nombre, other.nombre);
 	}
 	
 	public void metodo() {
