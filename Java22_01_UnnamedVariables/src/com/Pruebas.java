@@ -110,8 +110,15 @@ public class Pruebas
     	datos.offer(6);
     	return datos;
     }
+    
+    public static void movida(int n, String s) {
+    	
+    }
 
 }
 
 record Punto(Integer x, Integer y) {
 }
+
+
+

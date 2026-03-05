@@ -11,8 +11,7 @@ import java.net.InetSocketAddress;
 
 public class Pruebas_HttpServer {
 	
-    public static void main(String[] args) throws IOException {
-    	
+    public static void main(String[] args) throws IOException {    	
     	//
     	// Desde Java 1.6
     	//
@@ -30,6 +29,7 @@ public class Pruebas_HttpServer {
         	System.out.println("Petición recibida: "+exchange.getRequestMethod()+" "+exchange.getRequestURI()+", "+Thread.currentThread().getName());
         	String response = "<html><head></head><body><marquee><h1><font color=\"lightGreen\">Respuesta enlatada</font></h1></marquee></body></html>";
             exchange.sendResponseHeaders(200, response.length());
+            exchange.getResponseHeaders().add("content-type", "text/html");
             OutputStream os = exchange.getResponseBody();
             os.write(response.getBytes());
             os.close();

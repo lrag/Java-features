@@ -16,7 +16,7 @@ public class Pruebas
     	} catch (Exception e) {
     		IO.println(e.getMessage());
     	}
-    	
+    	    	
     	IO.println("--------------------------------------------------------------------------------------------");
     	com.modelo.entidad_Java_25.PerroPolicia pp3 = new com.modelo.entidad_Java_25.PerroPolicia("Rex",35d,0,100);
     	

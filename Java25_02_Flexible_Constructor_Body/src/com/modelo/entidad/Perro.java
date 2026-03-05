@@ -18,7 +18,7 @@ public class Perro extends Animal {
 		if(numeroPulgas==null || numeroPulgas<0) {
 			throw new RuntimeException("Numero de pulgas no puede ser menor que 0");
 		}		
-		
+
 		this.numeroPulgas = numeroPulgas;
 	}
 

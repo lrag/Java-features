@@ -13,10 +13,8 @@ public class Pruebas
     	//
     	//Un hilo de los de toda la vida: corresponden con un verdadero hilo del sistema
     	//
-    	//Thread th = new Thread(new Tarea(new AtomicLong()));
-    	//th.start(); //se crea un hilo normal y se le envía a ejecutar el run' del runnable
-    	
-    	
+    	Thread th = new Thread(new Tarea(new AtomicLong()));
+    	th.start(); //se crea un hilo normal y se le envía a ejecutar el run' del runnable
     	
     	//
     	//Introducidos como preview en Java 19

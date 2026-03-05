@@ -51,8 +51,8 @@ public class Pruebas {
 
 		System.out.println("=====================================");
 		ObjectMapper objectMapper = new ObjectMapper();
-		String json = objectMapper.writeValueAsString(c);
-		System.out.println(json);
+		String jsón = objectMapper.writeValueAsString(c);
+		System.out.println(jsón);
 		
 	}
 	

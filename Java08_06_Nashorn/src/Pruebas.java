@@ -11,6 +11,13 @@ import com.curso.modelo.entidad.Persona;
 
 public class Pruebas {
 
+	///////////////////////////////////////////
+	// Introducido en Java 8...              //
+	// Marcado como deprecated en Java 11... //
+	// Eliminado en Java 15 :(               //
+	// Existe como proyecto separado de JDK  //
+	///////////////////////////////////////////
+	
 	public static void main(String[] args) {
 		
 		//Eval

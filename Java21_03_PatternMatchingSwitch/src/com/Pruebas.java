@@ -28,7 +28,7 @@ public class Pruebas {
 			tipo = "Es un string";
 		}
 		System.out.println(tipo);
-
+		
 		//
 		//Desde Java21
 		//
@@ -69,7 +69,7 @@ public class Pruebas {
 			case String s when s.equalsIgnoreCase("N") || s.equalsIgnoreCase("No") -> System.out.println("Que no.");
 			case String s -> System.out.println("¿Qué?");
 			case Integer i when i>10   -> System.out.println("Un integer es");
-			default         -> System.out.println("Ni idea de lo que es");
+			default -> System.out.println("Ni idea de lo que es");
 		}
 		
 	}

@@ -32,7 +32,8 @@ public final class PerroPolicia extends Perro {
 
 	@Override
 	public String toString() {
-		return "PerroPolicia [numeroCasosResueltos=" + numeroCasosResueltos + "]";
+		return "PerroPolicia [numeroCasosResueltos=" + numeroCasosResueltos + ", numeroPulgas=" + numeroPulgas
+				+ ", nombre=" + nombre + ", peso=" + peso + "]";
 	}
 
 	@Override

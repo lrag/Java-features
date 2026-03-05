@@ -3,6 +3,7 @@ package com.curso.modelo.stream;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.Executor;
+import java.util.function.Function;
 
 import com.curso.modelo.entidad.Cliente;
 import com.curso.modelo.entidad.Factura;
@@ -29,13 +30,5 @@ public class ClientesProcessorFacturas extends ClientesProcessor {
 	}
 	
 }
-
-
-
-
-
-
-
-
 
 

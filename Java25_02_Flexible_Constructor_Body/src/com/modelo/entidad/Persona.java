@@ -8,7 +8,7 @@ public class Persona {
 	public Persona() {
 		super();
 		if(edad<0) {
-			throw new RuntimeException("La edad no puede ser menor que cero 0");
+			throw new RuntimeException("La edad no puede ser menor que cero");
 		}		
 	}
 
